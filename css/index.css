@@ -11,6 +11,10 @@ body {
 	cursor: default;
 }
 
+.capitalize {
+	text-transform: uppercase;
+}
+
 /* Navbar */
 
 #navbar a {
@@ -38,7 +42,7 @@ body {
 .jumbotron {
 	padding-top: 0;
 	margin-bottom: 0;
-	background-image: url("banner.png");
+	background-image: url("http://just10ying.com/resources/banner.png");
 	background-repeat: no-repeat;
 	height: 40em;
 	color: #E9E9E9;
