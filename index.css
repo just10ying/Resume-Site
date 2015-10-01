@@ -29,7 +29,7 @@ body {
 .jumbotron {
 	padding-top: 0;
 	margin-bottom: 0;
-	background-image: url("banner.png");
+	background-image: url("Banner.png");
 	background-repeat: no-repeat;
 	height: 35em;
 	color: #E9E9E9;
@@ -57,13 +57,34 @@ body {
 	padding-top: 2em;
 }
 
+.about-container .about-row {
+	display: flex;
+}
+
 .about-container .profile-picture {
 	display: block;
 	margin: auto;
+	min-height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .about-container .profile-picture {
+        display: block;
+		margin: 5em auto;
+		width: 60vw;
+    }
+	
+	.about-container .about-row {
+		display: block;
+	}
 }
 
 .about-container .about-text p{
 	padding-left: 0em;
+}
+
+.about-container h1 {
+	margin-top: 0;
 }
 
 .about-container .contact-list {

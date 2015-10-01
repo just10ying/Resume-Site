@@ -1,12 +1,8 @@
 $(document).ready(function() {
 	skrollr.init();
-    $.srSmoothscroll({
-        step: 100,
-        speed: 300,
-        ease: 'swing',
-        target: $('body'),
-        container: $(window)
-    });
+    setTimeout(function() {
+        $('.jumbotron-text.container.unselectable').fadeIn(1000);
+    }, 250);
 });
 
 function scrollToAbout() {
