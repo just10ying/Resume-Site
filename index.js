@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	skrollr.init();
     setTimeout(function() {
         $('.jumbotron-text.container.unselectable').fadeIn(1000);
     }, 250);
