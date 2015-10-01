@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>	
+		<title>Justin Ying</title>
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="index.css">
 	</head>
 	<body>
+		<script src="skrollr.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="jquery.mousewheel.min.js"></script>
+		<script src="smoothscroll.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		
-		<div class="jumbotron">
+		<script src="index.js"></script>
+		<div id="skrollr-body"></div>
+		<div class="jumbotron" data-0="background-position: 100% 0px" data-600="background-position: 100% 300px" data-smooth-scrolling="off">
 			<div id="navbar" class="collapse navbar-collapse">
         		<ul class="nav navbar-nav">
-            		<li><a href="#about">About</a></li>
-            		<li><a href="#contact">Contact</a></li>
-            		<li><a href="#experience">Experience</a></li>
+            		<li onclick="scrollToAbout()"><a href="#about">About</a></li>
+            		<li onclick="scrollToAbout()"><a href="#contact">Contact</a></li>
+            		<li onclick="scrollToExperience()"><a href="#experience">Experience</a></li>
         		</ul>
         	</div>
-			<div class="jumbotron-text container unselectable">
+			<div class="jumbotron-text container unselectable" data-0="opacity:1;" data-300="opacity:0;">
 				<h1 align="center">JUSTIN YING</h1>
 				<h3 align="center">Software Developer</h3>
 			</div>
@@ -40,7 +45,7 @@
 					</p>
 					<p>Nice to meet you!</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 contact-container">
 					<h2>Contact</h2>
 					<ul class="contact-list">
 						<li><a href="mailto:just10ying@gmail.com" target="_blank">Email</a></li>
@@ -52,24 +57,56 @@
 		</div>
 		<div class="container experience">
 			<div class="row">
-				<div class="col-md-4">Picture</div>
-				<div class="col-md-8">Text</div>
+				<div class="col-md-4">
+					<img src="Epic.jpg">
+				</div>
+				<div class="col-md-8">
+					<h2>Epic Intern 2015</h2>
+					<ul>
+						<li>Created a multi-layer image annotation tool for Android, which supports drawing, text, and distance annotations</li>
+						<li>Utilized OpenCV for reference object detection, allowing for relative distance measurements</li>
+						<li>Designed tool resolution to change dynamically to save memory without quality loss</li>
+					</ul>
+				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">Picture</div>
-				<div class="col-md-8">Text</div>
+				<div class="col-md-8">
+					<h2>Bentley Intern 2012</h2>
+					<ul>
+						<li>Created a multi-layer image annotation tool for Android, which supports drawing, text, and distance annotations</li>
+						<li>Utilized OpenCV for reference object detection, allowing for relative distance measurements</li>
+						<li>Designed tool resolution to change dynamically to save memory without quality loss</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<img src="bentley.jpg">
+				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">Picture</div>
-				<div class="col-md-8">Text</div>
+				<div class="col-md-4">
+					<img src="Epic.jpg">
+				</div>
+				<div class="col-md-8">
+					<h2>Epic Intern 2015</h2>
+					<ul>
+						<li>Created a multi-layer image annotation tool for Android, which supports drawing, text, and distance annotations</li>
+						<li>Utilized OpenCV for reference object detection, allowing for relative distance measurements</li>
+						<li>Designed tool resolution to change dynamically to save memory without quality loss</li>
+					</ul>
+				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">Picture</div>
-				<div class="col-md-8">Text</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">Picture</div>
-				<div class="col-md-8">Text</div>
+				<div class="col-md-8">
+					<h2>Bentley Intern 2012</h2>
+					<ul>
+						<li>Created a multi-layer image annotation tool for Android, which supports drawing, text, and distance annotations</li>
+						<li>Utilized OpenCV for reference object detection, allowing for relative distance measurements</li>
+						<li>Designed tool resolution to change dynamically to save memory without quality loss</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<img src="bentley.jpg">
+				</div>
 			</div>
 		</div>
 	</body>
