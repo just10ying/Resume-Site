@@ -1,0 +1,87 @@
+body {
+	background-color: #E9E9E9;
+}
+
+.unselectable {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+/* Navbar */
+
+#navbar a {
+	color: #E9E9E9;
+	border: 1px solid transparent;
+	background-color: transparent;
+	transition: .3s;
+}
+
+#navbar a:hover {
+	background-color: transparent;
+	border: 1px solid #E9E9E9;
+	border-top: 1px solid transparent;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+	padding-top: 0;
+	margin-bottom: 0;
+	background-image: url("banner.png");
+	height: 60vh;
+	color: #E9E9E9;
+	font-size: 120%;
+}
+
+.jumbotron .navbar-nav {
+	float: right;
+}
+
+.jumbotron h1 {
+	font-size: 550%;
+}
+
+.jumbotron .jumbotron-text.container{
+	padding-top: 12.5em;
+}
+
+/* About */
+
+.about-container {
+	background-color: #293D67;
+	color: #E9E9E9;
+	padding-bottom: 2em;
+	padding-top: 2em;
+}
+
+.about-container .profile-picture {
+	padding: 5em;
+	display: block;
+	margin: auto;
+}
+
+.about-container .about-text p{
+	padding-left: 1em;
+}
+
+.about-container .contact-list {
+	padding-left: 1em;
+}
+
+.about-container ul.contact-list {
+	list-style-type: none;
+}
+
+.about-container .contact-list a {
+	color: #E9E9E9;
+}
+
+/* Experience */
+
+.container.experience {
+	margin-top: 5em;
+}
