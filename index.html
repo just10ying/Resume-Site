@@ -10,20 +10,20 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="js/skrollr.js"></script>
 		<script src="js/index.js"></script>
-		<div class="jumbotron">
+		<div class="jumbotron splash">
 			<div id="navbar" class="collapse navbar-collapse">
         		<ul class="nav navbar-nav">
             		<li onclick="scrollToElement('.about-container')"><a>About</a></li>
-            		<li onclick="scrollToElement('.about-container')"><a>Contact</a></li>
+            		<li onclick="scrollToElement('.contact-container')"><a>Contact</a></li>
             		<li onclick="scrollToElement('.container.experience')"><a>Experience</a></li>
         		</ul>
         	</div>
-			<div class="jumbotron-text container unselectable" style="display: none" data-0="opacity:1; padding-top:12.5em;" data-500="opacity:0; padding-top: 11em;">
+			<div class="jumbotron-text container unselectable">
 				<h1 align="center">Justin Ying</h1>
 				<h3 align="center" class="capitalize">Software Developer</h3>
 			</div>
+			<div class="jumbotron-scrolldown" onclick="scrollToElement('.about-container')"></div>
 		</div>
 		<div class="container-fluid about-container">
 			<div class="row about-row">
@@ -52,64 +52,17 @@
 				</div>
 			</div>
 		</div>
-		<div class="container experience">
-			<div class="row">
+		<div data-ng-app="experienceApp" data-ng-controller="experienceController" class="container experience">
+			<div data-ng-repeat="experience in expList" class="row">
 				<div class="col-md-4">
-					<img src="resources/epic.jpg">
+					<img src="{{ experience.imgSrc }}">
 				</div>
 				<div class="col-md-8">
-					<h2>Epic</h2>
-					<h4>Android Development Intern</h4>
-					<p>Short description here blah blah I am talking about things and typing words this is just like how I talk to people lol it should wrap eventually is it wrapping okay please wrap where is the wrap I'm hungry for wraps</p>
+					<h2>{{ experience.title }}</h2>
+					<h4>{{ experience.position }}</h4>
+					<p>{{ experience.description }}</p>
 					<ul>
-						<li>Created a multi-layer image annotation tool for Android, which supports drawing, text, and distance annotations</li>
-						<li>Utilized OpenCV for reference object detection, allowing for relative distance measurements</li>
-						<li>Designed tool resolution to change dynamically to save memory without quality loss</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<img src="resources/benedum.jpg">
-				</div>
-				<div class="col-md-8">
-					<h2>University of Pittsburgh: Thermoelectric Device Simulation</h2>
-					<h4>Research Assistant</h4>
-					<p>Short description here blah blah I am talking about things and typing words this is just like how I talk to people lol it should wrap eventually is it wrapping okay please wrap where is the wrap I'm hungry for wraps</p>
-					<ul>
-						<li>Created a multi-layer image annotation tool for Android, which supports drawing, text, and distance annotations</li>
-						<li>Utilized OpenCV for reference object detection, allowing for relative distance measurements</li>
-						<li>Designed tool resolution to change dynamically to save memory without quality loss</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<img src="resources/hyperspace.jpg">
-				</div>
-				<div class="col-md-8">
-					<h2>Epic</h2>
-					<h4>Hyperspace Web Development Intern</h4>
-					<p>Short description here blah blah I am talking about things and typing words this is just like how I talk to people lol it should wrap eventually is it wrapping okay please wrap where is the wrap I'm hungry for wraps</p>
-					<ul>
-						<li>Created a multi-layer image annotation tool for Android, which supports drawing, text, and distance annotations</li>
-						<li>Utilized OpenCV for reference object detection, allowing for relative distance measurements</li>
-						<li>Designed tool resolution to change dynamically to save memory without quality loss</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<img src="resources/bentley.png">
-				</div>
-				<div class="col-md-8">
-					<h2>Bentley Systems</h2>
-					<h4>Research Assistant</h4>
-					<p>Short description here blah blah I am talking about things and typing words this is just like how I talk to people lol it should wrap eventually is it wrapping okay please wrap where is the wrap I'm hungry for wraps</p>
-					<ul>
-						<li>Created a multi-layer image annotation tool for Android, which supports drawing, text, and distance annotations</li>
-						<li>Utilized OpenCV for reference object detection, allowing for relative distance measurements</li>
-						<li>Designed tool resolution to change dynamically to save memory without quality loss</li>
+						<li data-ng-repeat="bullet in experience.bullets">{{ bullet }}</li>
 					</ul>
 				</div>
 			</div>
