@@ -1,4 +1,0 @@
-Decrease banner resolution and always center
-Add down button to jumbotron
-Favcion
-Sometimes the banner isn't the right height?????

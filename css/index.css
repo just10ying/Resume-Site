@@ -96,7 +96,8 @@ body {
 .about-container .profile-picture {
 	display: block;
 	margin: auto;
-	min-height: 100%;
+	height: 100%;
+	width: auto;
 }
 
 .about-container .about-text {
@@ -142,8 +143,16 @@ body {
 	padding-bottom: 2.5em;
 }
 
+.container.experience .img-container {
+	align-self: center;
+}
+
 .container.experience > .row:not(:last-child) {
 	border-bottom: 1px solid #BBBBBB;	
+}
+
+.container.experience h2 {
+	margin-top: 0;
 }
 
 .container img {
@@ -210,7 +219,7 @@ body {
 	.container.experience img {
 		max-width: 75vw;
 		display: block;
-		margin: auto;
-	}	
+		margin: 0 auto 2em auto;
+	}
 }
 
