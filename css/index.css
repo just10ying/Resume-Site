@@ -34,6 +34,7 @@ body {
 #navbar.navbar-collapse.collapse {
 	display: block;
 }
+
 #navbar .navbar-nav > li {
 	float: left;
 }
@@ -108,6 +109,7 @@ body {
 	padding-left: 0em;
 	text-align: justify;
 	text-justify: inter-word;
+	font-size: 110%;
 }
 
 .about-container h1 {
