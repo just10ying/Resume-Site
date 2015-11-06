@@ -40,9 +40,9 @@
 						and maximizing program efficiency.  Outside of school and work, you can find me
 						<a href="https://www.youtube.com/watch?v=t4JG1gxdPuI" target="_blank">making music with friends,</a> 
 						<a href="resources/model.jpg" target="_blank">assembling models,</a> or working on
-						<a href="https://github.com/just10ying/Resume-Site" target="_blank">personal coding projects.</a>
+						<a href="https://github.com/just10ying/" target="_blank">personal coding projects.</a>
 					</p>
-					<p>I look forward to working with you to create something impactful!</p>
+					<p>I look forward to working with you!</p>
 				</div>
 				<div class="contact-container flex col grow">
 					<h1>Contact</h1>
@@ -64,7 +64,7 @@
 					<h4>{{ experience.position }}</h4>
 					<p>{{ experience.description }}</p>
 					<ul>
-						<li data-ng-repeat="bullet in experience.bullets">{{ bullet }}</li>
+						<li data-ng-repeat="bullet in experience.bullets" ng-bind-html-unsafe="bullet.html">{{ bullet }}</li>
 					</ul>
 				</div>
 			</div>

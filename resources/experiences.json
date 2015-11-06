@@ -1,12 +1,53 @@
 [
 	
-{"title":"Epic (2015)","imgSrc":"resources/epic.jpg","position":"Android Development Intern","description":"I added new annotation functionality to Haiku Android, Epic's mobile application for physicians, and I collaborated with two other interns to deliver inter-platform compatibility to Haiku on both iOS and Android.  Mobile dev was fun!","bullets":["Created a multi-layer annotation tool for Android that supports drawing, text, and measurement annotations","Utilized OpenCV for reference object detection, allowing for relative distance measurements","Designed an easily-extensible layer structure that supports cross-platform compatibility with iOS devices"]},
+{"title":"Epic (2015)",
+"imgSrc":"resources/epic.jpg",
+"position":"Android Development Intern",
+"description":"I added new annotation functionality to Haiku Android, Epic's mobile application for physicians, and I collaborated with two other interns to deliver inter-platform compatibility to Haiku on both iOS and Android.",
+"bullets":
+	["Developed an Android application and extensible framework to allow physicians to add text, measurement, and free-form annotations to clinical images",
+	"Utilized OpenCV for image processing to allow for relative distance measurements",
+	"Designed annotations to support cross-platform compatibility with iOS devices"]
+},
 
-{"title":"Swanson School of Engineering (2015)","imgSrc":"resources/benedum.jpg","position":"Research Assistant","description":"Quantifying the effects of radiation heat transfer in thermoelectric devices (TEDs) sheds light on the affects of different interconnect geometries on efficiency.  I worked with MEMS instructor Matthew Barry to develop a program for determining the effects of radiation heat transfer in different TED structures","bullets":["Created a ray tracer to calculate high resolution heat radiation view factors for variable TED geometries","Optimized and parallelized the simulation via GPU acceleration to run hundreds of times faster than the existing Matlab script with greater precision","Co-authored journal article \"Numerical Solution of Radiation View Factors within a Thermoelectric Device\" currently under review for engineering journal Energy"]},
+{"title":"Swanson School of Engineering (2015)",
+"imgSrc":"resources/benedum.jpg",
+"position":"Research Assistant",
+"description":"Quantifying the effects of radiation heat transfer in thermoelectric devices (TEDs) sheds light on the affects of different interconnect geometries on efficiency.  I worked with MEMS instructor Matthew Barry to develop a program for determining the effects of radiation heat transfer in different TED structures",
+"bullets":
+	["Created a ray tracer to calculate high resolution heat radiation view factors for variable TED geometries",
+	"Utilized GPU acceleration to increase the simulation's speed and precision",
+	"Second author of journal article \"Numerical Solution of Radiation View Factors within a Thermoelectric Device\" currently under review for engineering journal Energy"]
+},
 	
 	
-{"title":"Epic (2014)","imgSrc":"resources/hyperspace.jpg","position":"Hyperspace Web Development Intern","description":"I ported a Visual Basic Hyperspace activity to Hyperspace Web, which involved creating a responsive web application compatible with all modern browsers, streamlining the UI, and adding new, requested features.","bullets":["Collaborated with UX and QA staff to produce a fully-functional, polished, and secure web application","Designed and implemented an improved user interface that performed consistently across multiple browsers and scaled to varying screen resolutions","Interfaced with Epic's database using proprietary ORM to store and retrieve relevant data"]},
+{"title":"Epic (2014)",
+"imgSrc":"resources/hyperspace.jpg",
+"position":"Hyperspace Web Development Intern",
+"description":"I ported a Visual Basic Hyperspace activity to Hyperspace Web, which involved creating a responsive web application compatible with all modern browsers, streamlining the UI, and adding new, requested features.",
+"bullets":
+	["Produced a fully-functional ASP.NET web application",
+	"Collaborated with UX and QA staff to design and implement an improved user interface that performed consistently across multiple browsers and scaled to varying screen resolutions",
+	"Accessed Caché database in C# using proprietary ORM to store and retrieve relevant data"]
+},
 
-{"title":"Bentley Systems (2013)","imgSrc":"resources/bentley.png","position":"Software Development Intern","description":"I modified MicroStation source code to use C++11's enum classes and refactoring legacy code.","bullets":["Modified MicroStation source code to comply with C++11 standards","Transitioned enums to enum classes, enforcing their proper usage in the MicroStation codebase","Refactored legacy code to improve maintainability"]}
+{"title":"Tab Cleaner (2015)",
+"imgSrc":"resources/chrome_extension.png",
+"position":"Developer",
+"description":"I developed this Chrome extension to clean up Chrome's new tab page at a friend's request.  Actively communicating with users and implementing their suggestions continues to be very rewarding.  Check out my Github page for the source code!",
+"bullets":
+	["Published a Chrome extension that allows for the customization and simplification of Chrome's new tab page",
+	"Adhered to material design principles and actively interacted with users to improve usability"]
+},
+
+{"title":"Bentley Systems (2013)",
+"imgSrc":"resources/bentley.png",
+"position":"Software Development Intern",
+"description":"I modified MicroStation source code to use C++11's enum classes and refactoring legacy code.",
+"bullets":
+	["Modified MicroStation source code to comply with C++11 standards",
+	"Transitioned enums to enum classes, enforcing their proper usage in the MicroStation codebase",
+	"Refactored legacy code to improve maintainability"]
+}
 		
 ]
