@@ -57,7 +57,7 @@
 		<div data-ng-app="experienceApp" data-ng-controller="experienceController" class="container experience">
 			<div data-ng-repeat="experience in expList" class="row">
 				<div class="col-md-4 img-container">
-					<img src="{{ experience.imgSrc }}">
+					<img ng-src="{{ experience.imgSrc }}">
 				</div>
 				<div class="col-md-8">
 					<h2>{{ experience.title }}</h2>

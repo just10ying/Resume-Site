@@ -44,7 +44,7 @@ body {
 .jumbotron.splash {
 	padding-top: 0;
 	margin-bottom: 0;
-	background-image: url(http://just10ying.com/resources/banner.png);
+	background-image: url(/resources/banner.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
