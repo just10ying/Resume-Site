@@ -44,13 +44,13 @@ body {
 .jumbotron.splash {
 	padding-top: 0;
 	margin-bottom: 0;
-	background-image: url(/resources/banner.png);
+	background-image: url('/resources/banner.png');
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
 	-o-background-size: cover;
   	background-size: cover;
-	height: 65vh;
+	height: 66vh;
 	color: #E9E9E9;
 	font-size: 120%;
 	position: relative;
@@ -62,6 +62,10 @@ body {
 
 .jumbotron h1 {
 	font-size: 550%;
+}
+
+.jumbotron-text h1, h3 {
+	text-align: center;
 }
 
 .jumbotron .jumbotron-text.container {
@@ -200,6 +204,11 @@ body {
 		width: 60vw;
     }
 	
+	.about-container .contact-list {
+		padding-left: 0;
+	}
+
+	
 	.about-container .about-row {
 		display: block;
 	}
@@ -211,11 +220,13 @@ body {
 	.about-container .about-text h1,
 	.about-container .contact-container {
 		text-align: center;
+		font-size: 125%;
 		padding: 0;
 	}
 	
 	.container.experience {
 		display: block;
+		font-size: 125%;
 	}
 	
 	.container.experience img {

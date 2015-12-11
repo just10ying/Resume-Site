@@ -3,21 +3,21 @@
 {"title":"Epic (2015)",
 "imgSrc":"resources/epic.jpg",
 "position":"Android Development Intern",
-"description":"I added new annotation functionality to Haiku Android, Epic's mobile application for physicians, and I collaborated with two other interns to deliver cross-platform compatibility to Haiku on both iOS and Android.",
+"description":"I added new annotation functionality to Haiku Android, Epic's mobile application for physicians, and I collaborated with two other interns to deliver inter-platform compatibility to Haiku on both iOS and Android.",
 "bullets":
 	["Developed an Android activity that allows physicians to create text and drawing annotations on images",
-	"Utilized OpenCV for image processing to allow for distance annotations given a reference object",
-	"Designed annotations to support cross-platform compatibility with iOS devices"]
+	"Utilized OpenCV for image processing to find reference objects, enabling distance measurements",
+	"Designed application for cross-platform compatibility with iOS devices"]
 },
 
 {"title":"Swanson School of Engineering (2015)",
 "imgSrc":"resources/benedum.jpg",
 "position":"Researcher and Co-Author",
-"description":"Quantifying the effects of radiation heat transfer in thermoelectric devices (TEDs) sheds light on the affects of different interconnect geometries on efficiency.  I worked with MEMS instructor Matthew Barry to develop a program for determining the effects of radiation heat transfer in different TED structures",
+"description":"Quantifying the effects of radiation heat transfer in thermoelectric devices (TEDs) sheds light on the affects of different interconnect geometries on efficiency. I worked with MEMS instructor Matthew Barry to develop a program for determining the effects of radiation heat transfer in different TED structures",
 "bullets":
-	["Created a ray tracer to simulate heat radiation in thermoelectric devices",
-	"Utilized GPU acceleration to improve drastically the simulation’s speed and precision",
-	"Developed a web interface for remotely managing simulations using Java’s HttpServer and Bootstrap",
+	["Created a ray tracer to simulate thermal radiation in thermoelectric devices",
+	"Utilized GPU acceleration to improve drastically the simulation's speed and precision",
+	"Developed a web interface for remotely managing simulations using Java's HttpServer and Bootstrap",
 	"Second author of Energy journal article \"Numerical Solution of Radiation View Factors within a Thermoelectric Device\" (under review)"]
 },
 	
@@ -25,11 +25,11 @@
 {"title":"Epic (2014)",
 "imgSrc":"resources/hyperspace.jpg",
 "position":"Hyperspace Web Development Intern",
-"description":"I ported a Visual Basic Hyperspace activity to Hyperspace Web, which involved creating a responsive web application compatible with all modern browsers, streamlining the UI, and adding new features.",
+"description":"I ported a Visual Basic activity to ASP.NET, which involved creating a responsive web application compatible with modern browsers and working with Epic's JavaScript framework to add new features.",
 "bullets":
-	["Produced a secure, responsive ASP.NET web application",
-	"Accessed Caché database in C# using proprietary ORM to store and retrieve relevant data",
-	"Collaborated with user experience and quality assurance staff to design and implement a scalable user interface"]
+	["Produced a secure, cross-browser compatible ASP.NET web application for clinicians",
+	"Accessed Caché database in C# using Epic's ORM to store and retrieve sensitive data",
+	"Collaborated with user experience designers to implement an intuitive, responsive user interface"]
 },
 
 {"title":"Tab Cleaner (2015)",
@@ -44,7 +44,7 @@
 {"title":"Bentley Systems (2013)",
 "imgSrc":"resources/bentley.png",
 "position":"Software Development Intern",
-"description":"I modified MicroStation source code to use C++11's enum classes and refactored legacy code.",
+"description":"I modified MicroStation source code to use enum classes and refactored legacy code.",
 "bullets":
 	["Modified MicroStation source to comply with C++11 standards using Python and regular expressions",
 	"Refactored legacy code to improve maintainability"]

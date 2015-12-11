@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>	
+	<head>
+		<meta charset="UTF-8">
 		<title>Justin Ying</title>
 		<link rel="shortcut icon" type="image/png" href="resources/andy.png"/>
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -21,26 +22,25 @@
         		</ul>
         	</div>
 			<div class="jumbotron-text container unselectable">
-				<h1 align="center">Justin Ying</h1>
-				<h3 align="center" class="capitalize">Software Developer</h3>
+				<h1>Justin Ying</h1>
+				<h3 class="capitalize">Software Developer</h3>
 			</div>
 			<div class="jumbotron-scrolldown" onclick="scrollToElement('.about-container')">
-				<img src="resources/chevron_down.png">
+				<img src="resources/chevron_down.png" alt="scroll down">
 			</div>
 		</div>
 		<div class="container-fluid about-container">
 			<div class="about-row flex row">
   				<div class="flex col grow">
-					<img class="profile-picture" src="resources/myface.jpg">
+					<img class="profile-picture" src="resources/myface.jpg" alt="Justin's Picture">
 				</div>
-  				<div class=" about-text flex col grow">
-					<h1>Hello!</h1>
+  				<div class="about-text flex col grow">
+					<h1>Hi there!</h1>
 					<p>
-						I'm Justin, a software developer with a passion for creating intuitive, responsive, and effective user experiences, developing structured, organized code, 
-						and maximizing program efficiency.  Outside of school and work, you can find me
-						<a href="https://www.youtube.com/watch?v=t4JG1gxdPuI" target="_blank">making music with friends,</a> 
-						<a href="resources/model.jpg" target="_blank">assembling models,</a> or working on
-						<a href="https://github.com/just10ying/" target="_blank">personal coding projects.</a>
+						I'm a self-motivated full stack developer excited about designing intuitive software, collaboration, and learning new things.  When I'm not coding, you can find me
+						<a href="https://www.youtube.com/watch?v=t4JG1gxdPuI" target="_blank">playing violin</a>, 
+						<a href="resources/model.jpg" target="_blank">building models</a>, 
+						or gaming.  My experiences include front-end web, Android 4.0+, and server-side development as well as violin performance.
 					</p>
 					<p>I look forward to working with you!</p>
 				</div>
@@ -50,6 +50,7 @@
 						<li><a href="mailto:just10ying@gmail.com" target="_blank">Email</a></li>
 						<li><a href="https://www.linkedin.com/pub/justin-ying/46/1aa/a98">LinkedIn</a></li>
 						<li><a href="resources/JustinYing_Resume.pdf">Resume</a></li>
+						<li><a href="https://github.com/just10ying">GitHub</a></li>
 					</ul>
 				</div>
 			</div>
@@ -57,14 +58,14 @@
 		<div data-ng-app="experienceApp" data-ng-controller="experienceController" class="container experience">
 			<div data-ng-repeat="experience in expList" class="row">
 				<div class="col-md-4 img-container">
-					<img ng-src="{{ experience.imgSrc }}">
+					<img ng-src="{{ experience.imgSrc }}" alt="experience image">
 				</div>
 				<div class="col-md-8">
 					<h2>{{ experience.title }}</h2>
 					<h4>{{ experience.position }}</h4>
 					<p>{{ experience.description }}</p>
 					<ul>
-						<li data-ng-repeat="bullet in experience.bullets" ng-bind-html-unsafe="bullet.html">{{ bullet }}</li>
+						<li data-ng-repeat="bullet in experience.bullets">{{ bullet }}</li>
 					</ul>
 				</div>
 			</div>
